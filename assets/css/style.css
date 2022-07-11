@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(25, 83, 229, 0.8862745098);
+}
+
+.area-wrapper {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.area-wrapper .area {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 35%;
+  min-width: 35%;
+}
+.area-wrapper .area .head-sec {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.area-wrapper .area .head-sec .inp {
+  padding: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.3333333333);
+  border-radius: 5px;
+  min-width: 350px;
+  font-size: 16px;
+}
+.area-wrapper .area .head-sec .btn {
+  min-width: 85px;
+  min-height: 45px;
+  font-size: 18px;
+  background-color: rgba(25, 83, 229, 0.8862745098);
+  color: whitesmoke;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.area-wrapper .area .head-sec .btn:hover {
+  border: 1px solid grey;
+}
+.area-wrapper .area .foot-sec .task {
+  padding: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.3333333333);
+  border-radius: 5px;
+  background-color: rgba(140, 202, 209, 0.8196078431);
+  margin-bottom: 10px;
+}
+.area-wrapper .area .foot-sec .task span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 18px;
+  color: rgb(37, 37, 37);
+}
+.area-wrapper .area .foot-sec .task span .trash-icn {
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 5px;
+  min-height: 35px;
+  min-width: 35px;
+  background-color: #1c1ba4;
+}
+.area-wrapper .area .foot-sec .task span .trash-icn:hover {
+  border: 1px solid;
+  cursor: pointer;
+}
