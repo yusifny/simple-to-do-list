@@ -1,7 +1,9 @@
+// @import "responsive";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
 }
 
 body{
@@ -17,17 +19,20 @@ body{
         padding: 20px;
         max-width: 35%;
         min-width: 35%;
+        max-height: 450px;
         .head-sec{
             margin-top: 10px;
             margin-bottom: 50px;
             display: flex;
             justify-content: space-between;
+            overflow-x:auto;
             .inp{
                 padding: 10px;
                 border: 2px solid #80808055;
                 border-radius: 5px;
-                min-width: 350px;
+                min-width: 360px;
                 font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
             }
             .btn{
                 min-width: 85px;
@@ -40,18 +45,19 @@ body{
                 border-radius: 5px;
                 &:hover{
                     border: 1px solid grey;
+                    transition: 100ms;
                 }
             }
         }
         .foot-sec{
-
+            overflow-y: auto;
             .task{
                 padding: 5px;
                 border: 2px solid #80808055;
                 border-radius: 5px;
                 background-color: #8ccad1d1;
                 margin-bottom: 10px;
-                span{
+                .span{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -61,6 +67,7 @@ body{
                     .trash-icn{
                         border-radius: 5px;
                         padding: 8px;
+                        margin-top: 9px;
                         margin-right: 5px;
                         min-height: 35px;
                         min-width: 35px;
@@ -68,9 +75,19 @@ body{
                         &:hover{
                             border: 1px solid;
                             cursor: pointer;
+                            transition-delay: 10ms;
                         }
                     }
                 }
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            font-size: 22px;
+            span{
+                display: flex;
+                justify-content: center;
             }
         }
     }

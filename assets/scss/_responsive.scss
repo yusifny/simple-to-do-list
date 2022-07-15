@@ -1,0 +1,20 @@
+@media screen and (max-width: 1440px) {
+    .inp{
+        min-width: 370px !important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .inp{
+        min-width: 310px !important;
+    }
+}
+@media screen and (max-width: 720px) {
+    .inp{
+        min-width: 320px !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .inp{
+        min-width: 355px !important;
+    }
+}

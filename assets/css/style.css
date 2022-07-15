@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
 }
 
 body {
@@ -19,19 +20,22 @@ body {
   padding: 20px;
   max-width: 35%;
   min-width: 35%;
+  max-height: 450px;
 }
 .area-wrapper .area .head-sec {
   margin-top: 10px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  overflow-x: auto;
 }
 .area-wrapper .area .head-sec .inp {
   padding: 10px;
   border: 2px solid rgba(128, 128, 128, 0.3333333333);
   border-radius: 5px;
-  min-width: 350px;
+  min-width: 360px;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .area-wrapper .area .head-sec .btn {
   min-width: 85px;
@@ -45,6 +49,10 @@ body {
 }
 .area-wrapper .area .head-sec .btn:hover {
   border: 1px solid grey;
+  transition: 100ms;
+}
+.area-wrapper .area .foot-sec {
+  overflow-y: auto;
 }
 .area-wrapper .area .foot-sec .task {
   padding: 5px;
@@ -53,7 +61,7 @@ body {
   background-color: rgba(140, 202, 209, 0.8196078431);
   margin-bottom: 10px;
 }
-.area-wrapper .area .foot-sec .task span {
+.area-wrapper .area .foot-sec .task .span {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,15 +69,26 @@ body {
   font-size: 18px;
   color: rgb(37, 37, 37);
 }
-.area-wrapper .area .foot-sec .task span .trash-icn {
+.area-wrapper .area .foot-sec .task .span .trash-icn {
   border-radius: 5px;
   padding: 8px;
+  margin-top: 9px;
   margin-right: 5px;
   min-height: 35px;
   min-width: 35px;
   background-color: #1c1ba4;
 }
-.area-wrapper .area .foot-sec .task span .trash-icn:hover {
+.area-wrapper .area .foot-sec .task .span .trash-icn:hover {
   border: 1px solid;
   cursor: pointer;
+  transition-delay: 10ms;
+}
+.area-wrapper .area .info {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+}
+.area-wrapper .area .info span {
+  display: flex;
+  justify-content: center;
 }
